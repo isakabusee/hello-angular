@@ -4,23 +4,12 @@ import { CoursesService } from '../courses.service';
 @Component({
   selector: 'courses',
   template: `
-  <h2>{{ title }}<h2>
-  <ul>
-  <li *ngFor="let course of courses">
-  {{course}}
-  </li>
-  </ul>`
-  // templateUrl: './courses.component.html',
-  // styleUrls: ['./courses.component.css']
+    <button class="btn btn-primary">Save</button>
+  `
+  //this section is called the DOM
 })
-export class CoursesComponent implements OnInit {
-  courses;
-
-  constructor(service: CoursesService) { 
-    this.courses = service.getCourses();
-  }
-
-  ngOnInit() {
-  }
-
+export class CoursesComponent {
+  // title = "List of courses";
+  // imageUrl = ""
+  //this section is called as the component
 }
