@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   <div (click)="onDivClicked()">
     <button (click)="onSave($event)">Save</button>
   </div>
+  <input [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
   `
   
   //this section is called the DOM
@@ -18,5 +19,9 @@ export class CoursesComponent {
   onSave($event) {
     $event.stopPropagation();
     console.log("This button was clicked", $event);
+  }
+  email = "me@example.com";
+  onKeyUp() {
+    console.log(this.email);
   }
 }
