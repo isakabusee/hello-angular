@@ -8,13 +8,15 @@ import { CoursesComponent } from './courses/courses.component';
 import { CoursesService } from './courses.service';
 import { SummaryPipe } from './summary.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { PhraseCasePipe } from './phrase-case.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
     SummaryPipe,
-    FavoriteComponent
+    FavoriteComponent,
+    PhraseCasePipe
   ],
   imports: [
     BrowserModule,
